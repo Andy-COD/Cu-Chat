@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CU Chat</string>
+    <string name="menu_item">Settings</string>
+    <string name="notification_text">Notifications</string>
+    <string name="home">Home</string>
+    <string name="info">About</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="form_header">Create an account</string>
+    <string name="register_btn">Register</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="settings">Account Settings</string>
+    <string name="back">Back</string>
+    <string name="logout">Logout</string>
+    <string name="uName">Beivin</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="logo">logo</string>
+</resources>
