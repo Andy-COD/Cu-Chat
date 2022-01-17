@@ -16,11 +16,26 @@ public class Authentication extends AppCompatActivity {
     VideoView video;
     Button login, signUp;
 
+    FirebaseUser firebaseUser;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        //Check if user exist already
+        if(firebaseUser != null) {
+            Intent intent = new Intent(Authentication.this, HomePage.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authentication);
-
 
 
         signUp = findViewById(R.id.loginBtn);
@@ -39,13 +54,8 @@ public class Authentication extends AppCompatActivity {
 
         video.setOnPreparedListener(mp -> mp.setLooping(true));
 
-        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        //Check if user exist already
-        if(firebaseUser != null) {
-            Intent intent = new Intent(Authentication.this, HomePage.class);
-            startActivity(intent);
-            finish();
-        }
+
+
     }
 
     @Override

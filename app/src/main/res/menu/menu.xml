@@ -5,6 +5,12 @@
         android:title="@string/menu_item"
         android:id="@+id/settings_menu"
         android:icon="@drawable/ic_settings_foreground"
-        app:showAsAction="always"
+        app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_out"
+        app:showAsAction="never"/>
 </menu>
