@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
@@ -25,6 +26,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
@@ -37,7 +39,9 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
         setHasOptionsMenu(true);
+
         Toolbar toolbar = v.findViewById(R.id.toolbar);
+        ((AppCompatActivity) requireActivity()).setSupportActionBar(toolbar);
         toolbar.setTitle("");
 
         CircleImageView ProfilePicture = v.findViewById(R.id.profile_image);
@@ -54,7 +58,7 @@ public class HomeFragment extends Fragment {
                 username.setText(user.getUsername());
 
                 if(user.getImageURL().equals("default")) {
-                    ProfilePicture.setImageResource(R.mipmap.ic_launcher);
+                    ProfilePicture.setImageResource(R.drawable.ic_home);
                 }else {
                     Glide.with(HomeFragment.this).load(user.getImageURL()).into(ProfilePicture);
                 }
@@ -67,6 +71,7 @@ public class HomeFragment extends Fragment {
         });
         // Inflate the layout for this fragment
         return v;
+
     }
 
     @Override

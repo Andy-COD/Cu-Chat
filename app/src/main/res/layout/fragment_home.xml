@@ -33,7 +33,8 @@
                 android:id="@+id/username"
                 android:layout_marginStart="25dp"
                 android:textColor="#fff"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="25sp"/>
 
         </androidx.appcompat.widget.Toolbar>
 

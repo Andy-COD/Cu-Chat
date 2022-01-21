@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_activity);
         Thread thread = new Thread(() -> {
-            SystemClock.sleep(7000);
+            SystemClock.sleep(5000);
             Intent intent = new Intent(this, Authentication.class);
             startActivity(intent);
             finish();
