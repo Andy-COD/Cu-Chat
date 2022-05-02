@@ -19,4 +19,5 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="change_password">Change Password</string>
     <string name="logo">logo</string>
+    <string name="phone_number">phone number</string>
 </resources>

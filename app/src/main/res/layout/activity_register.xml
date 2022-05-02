@@ -57,6 +57,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:met_floatingLabel="normal"
+            android:id="@+id/phoneNum"
+            android:layout_marginTop="15dp"
+            android:hint="@string/phone_number"
+            android:textSize="20sp"
+            android:inputType="phone"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="normal"
             android:id="@+id/password"
             android:layout_marginTop="15dp"
             android:hint="@string/hint_password"
