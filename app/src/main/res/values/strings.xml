@@ -20,4 +20,6 @@
     <string name="change_password">Change Password</string>
     <string name="logo">logo</string>
     <string name="phone_number">phone number</string>
+    <string name="campus_chat">Campus Chat</string>
+    <string name="chatroom_description">Interact with other students on campus</string>
 </resources>

@@ -16,6 +16,8 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
+
+
         bottomNavigation = findViewById(R.id.bottom_nav);
         bottomNavigation.add(new MeowBottomNavigation.Model(1,R.drawable.ic_notifications));
         bottomNavigation.add(new MeowBottomNavigation.Model(2,R.drawable.ic_home));
